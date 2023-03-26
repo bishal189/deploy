@@ -102,9 +102,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'carzone',
-        'USER': 'bishal',
-        'PASSWORD': 'bishal',
-        'HOST': 'localhost',
+        'USER': 'qmrrfovc',
+        'PASSWORD': 't7ZGryHT0Qdo8BHM9SNzhiRlb07ToTtQ',
+        'HOST': 'postgres://qmrrfovc:t7ZGryHT0Qdo8BHM9SNzhiRlb07ToTtQ@hattie.db.elephantsql.com/qmrrfovc',
 
     }
 }
