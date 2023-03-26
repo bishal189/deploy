@@ -101,10 +101,10 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carzone',
+        'NAME': 'qmrrfovc',
         'USER': 'qmrrfovc',
         'PASSWORD': 't7ZGryHT0Qdo8BHM9SNzhiRlb07ToTtQ',
-        'HOST': 'postgres://qmrrfovc:t7ZGryHT0Qdo8BHM9SNzhiRlb07ToTtQ@hattie.db.elephantsql.com/qmrrfovc',
+        'HOST': 'hattie.db.elephantsql.com',
 
     }
 }
