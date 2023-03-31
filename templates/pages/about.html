@@ -31,12 +31,16 @@
                             <div class="active item carousel-item" data-slide-number="0">
                                 <img src="{{car.car_photo.url}}" class="img-fluid" alt="slider-car">
                             </div>
+                            {% if car.car_photo1 %}
                             <div class="item carousel-item" data-slide-number="1">
                                 <img src="{{car.car_photo1.url}}" class="img-fluid" alt="slider-car">
                             </div>
+                            {% endif %}
+                            {% if car.car_photo2 %}
                             <div class="item carousel-item" data-slide-number="2">
                                 <img src="{{car.car_photo2.url}}" class="img-fluid" alt="slider-car">
                             </div>
+                            {% endif %}
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators car-properties list-inline nav nav-justified">
@@ -45,16 +49,22 @@
                                     <img src="{{car.car_photo.url}}" class="img-fluid" alt="small-car">
                                 </a>
                             </li>
+                        
+                            {% if car.car_photo1 %}
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
                                     <img src="{{car.car_photo1.url}}" class="img-fluid" alt="small-car">
                                 </a>
                             </li>
+                            {% endif %}
+                            {% if car.car_photo2 %}
                             <li class="list-inline-item">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
                                     <img src="{{car.car_photo2.url}}" class="img-fluid" alt="small-car">
                                 </a>
                             </li>
+                            {% endif %}
+                        
                         </ul>
                     </div>
                 </div>

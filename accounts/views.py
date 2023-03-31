@@ -48,7 +48,7 @@ def register(request):
 
             else:
                 user=User.objects.create_user(first_name=first_name,last_name=last_name,username=user_name,email=email,password=password)
-                auth.login(request,user)
+                auth.login(request,user,backend='django.contrib.auth.backends.ModelBackend')
                 messages.success(request,'You are loged in!')
                 return redirect('dashboard')
                 user.save()
